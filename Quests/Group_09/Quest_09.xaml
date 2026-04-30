@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quests:BaseQuestView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:quests="clr-namespace:FindShaulsTreasure.Quests"
+             x:Class="FindShaulsTreasure.Quests.Group_09.Quest_09">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Connections"
+               FontSize="28"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"/>
+
+        <Grid x:Name="WordsGrid"
+              RowSpacing="10"
+              ColumnSpacing="10">
+        </Grid>
+
+        <Button Text="Submit"
+                Clicked="OnSubmitClicked"
+                BackgroundColor="DarkBlue"
+                TextColor="White"/>
+
+        <Label x:Name="StatusLabel"
+               HorizontalOptions="Center"
+               FontSize="16"/>
+
+    </VerticalStackLayout>
+
+</quests:BaseQuestView>
